@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Predictor</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laptop Price Predictor</h1>
+        <form id="predictForm">
+            <div class="form-group">
+                <label for="brand">Brand:</label>
+                <select id="brand" required>
+                    <option value="">Select a brand</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Honor">Honor</option>
+                    <option value="Apple">Apple</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="screenSize">Screen Size (in inches):</label>
+                <select id="screenSize" required>
+                    <option value="">Select screen size</option>
+                    <option value="13">13"</option>
+                    <option value="15">15"</option>
+                    <option value="17">17"</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="processor">Processor:</label>
+                <input type="text" id="processor" required placeholder="e.g., Intel i7">
+            </div>
+            <div class="form-group">
+                <label for="hardDrive">Hard Drive (in GB):</label>
+                <input type="number" id="hardDrive" required placeholder="e.g., 512">
+            </div>
+            <div class="form-group">
+                <label for="cpu">CPU Type:</label>
+                <select id="cpu" required>
+                    <option value="">Select CPU type</option>
+                    <option value="Intel i3">Intel i3</option>
+                    <option value="Intel i5">Intel i5</option>
+                    <option value="Intel i7">Intel i7</option>
+                    <option value="AMD Ryzen 3">AMD Ryzen 3</option>
+                    <option value="AMD Ryzen 5">AMD Ryzen 5</option>
+                    <option value="AMD Ryzen 7">AMD Ryzen 7</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="touchScreen">Touch Screen:</label>
+                <select id="touchScreen" required>
+                    <option value="">Select option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <button type="submit">Predict Price</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
